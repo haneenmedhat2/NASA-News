@@ -8,3 +8,7 @@
 * URLSession
 * CoreData
 * KingFisher
+
+## Simple Demo
+
+Uploading Simulator Screen Recording - iPhone 13 - 2024-12-31 at 12.16.36.mp4…
