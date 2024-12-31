@@ -11,6 +11,10 @@
 
 ## Simple Demo
 
+https://github.com/user-attachments/assets/152b401e-e480-474d-8080-e030728c2800
+
+## Screenshots
+
 ![IMG_8345](https://github.com/user-attachments/assets/ae8783f7-8b5c-4bf2-950f-71eed264dc04)
 
 ![IMG_8344](https://github.com/user-attachments/assets/af336bc9-7891-42cc-aca1-c8073c40dea3)
