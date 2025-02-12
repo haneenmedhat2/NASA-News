@@ -249,7 +249,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="CjN-MV-tym">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="s3t-rD-Xqj" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="s3t-rD-Xqj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Kib-FB-xSa"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="QEE-vs-Awk">

@@ -11,28 +11,30 @@ import SDWebImage
 class ViewController: UIViewController{
      
     var news : [NewsInfo] = []
-    var loadedApiData : (() -> ())?
+    var networkServicePro : NetworkServiceProtocol?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if networkServicePro == nil  {
+          networkServicePro = MockNetworkService()
+        }
+        
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         getNews()
-
     }
     
     func getNews(){
-        NetworkService.shared.networkService(url: Constant.url1) { (result : Result<[NewsInfo], Error>) in
-            switch result {
-            case .success(let response):
-                self.news = response
-                self.collectionView.reloadData()
-            case .failure(let error):
-                print("Error fetching news! \(error.localizedDescription)")
-           
-            }
-            self.loadedApiData?()
-            
+        networkServicePro?.fetchData{
+            (result : Result<[NewsInfo], Error>) in
+                switch result {
+                case .success(let response):
+                    self.news = response
+                    self.collectionView.reloadData()
+                case .failure(let error):
+                    print("Error fetching news! \(error.localizedDescription)")
+             }
         }
     }
 }

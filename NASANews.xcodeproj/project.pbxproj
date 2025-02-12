@@ -23,6 +23,9 @@
 		22E69FE12CCDAE2400D2F615 /* dataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69FE02CCDAE2400D2F615 /* dataStorage.swift */; };
 		22E69FE32CCDBC5700D2F615 /* FavNewsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69FE22CCDBC5700D2F615 /* FavNewsTable.swift */; };
 		22E69FE52CCDBCAC00D2F615 /* FavNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E69FE42CCDBCAC00D2F615 /* FavNewsCell.swift */; };
+		22ED5AB82D344D9200B4E150 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED5AB72D344D9200B4E150 /* NetworkServiceProtocol.swift */; };
+		22ED5ABA2D3458AF00B4E150 /* NetworkServiceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED5AB92D3458AF00B4E150 /* NetworkServiceLoader.swift */; };
+		22ED5ABC2D52D5A900B4E150 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ED5ABB2D52D5A900B4E150 /* MockNetworkService.swift */; };
 		34B1D1A5FBD9054F6287BCA7 /* Pods_NASANews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4485B48AC984714C83B9F3 /* Pods_NASANews.framework */; };
 		CB1DC6E4B566FEC24343CF4B /* Pods_NASANewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772AD53ACD3FCB0292F5EBA6 /* Pods_NASANewsTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,9 @@
 		22E69FE02CCDAE2400D2F615 /* dataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStorage.swift; sourceTree = "<group>"; };
 		22E69FE22CCDBC5700D2F615 /* FavNewsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavNewsTable.swift; sourceTree = "<group>"; };
 		22E69FE42CCDBCAC00D2F615 /* FavNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavNewsCell.swift; sourceTree = "<group>"; };
+		22ED5AB72D344D9200B4E150 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		22ED5AB92D3458AF00B4E150 /* NetworkServiceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceLoader.swift; sourceTree = "<group>"; };
+		22ED5ABB2D52D5A900B4E150 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 		772AD53ACD3FCB0292F5EBA6 /* Pods_NASANewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASANewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564ECE698AFD66CC0807F00 /* Pods-NASANews-NASANewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASANews-NASANewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-NASANews-NASANewsUITests/Pods-NASANews-NASANewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		901DF6614988632363102902 /* Pods-NASANews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASANews.release.xcconfig"; path = "Target Support Files/Pods-NASANews/Pods-NASANews.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 		2279060E2CBF4ABE0071E6BD /* NASANews */ = {
 			isa = PBXGroup;
 			children = (
+				22ED5AB62D344D6F00B4E150 /* service */,
 				223F382A2D20B96900D9EA6F /* controller */,
 				223F38292D20B94100D9EA6F /* view */,
 				223F38262D20B0A100D9EA6F /* constants */,
@@ -201,6 +208,16 @@
 				227906292CBF4AFA0071E6BD /* NASANewsTests.swift */,
 			);
 			path = NASANewsTests;
+			sourceTree = "<group>";
+		};
+		22ED5AB62D344D6F00B4E150 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				22ED5AB72D344D9200B4E150 /* NetworkServiceProtocol.swift */,
+				22ED5AB92D3458AF00B4E150 /* NetworkServiceLoader.swift */,
+				22ED5ABB2D52D5A900B4E150 /* MockNetworkService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		9054884281EA932EEFCD8984 /* Pods */ = {
@@ -403,8 +420,11 @@
 				227906102CBF4ABE0071E6BD /* AppDelegate.swift in Sources */,
 				22E69FE52CCDBCAC00D2F615 /* FavNewsCell.swift in Sources */,
 				22854C4D2CC032CE004E0162 /* NewsCell.swift in Sources */,
+				22ED5ABA2D3458AF00B4E150 /* NetworkServiceLoader.swift in Sources */,
 				227906122CBF4ABE0071E6BD /* SceneDelegate.swift in Sources */,
 				22781E182CC563A600877F27 /* NewsDetailsController.swift in Sources */,
+				22ED5ABC2D52D5A900B4E150 /* MockNetworkService.swift in Sources */,
+				22ED5AB82D344D9200B4E150 /* NetworkServiceProtocol.swift in Sources */,
 				223F38282D20B0C500D9EA6F /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
